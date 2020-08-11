@@ -1,0 +1,29 @@
+.portfolio {
+    .content__part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__menu {}
+
+    &__btn {}
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        background: #f5f0dd;
+        padding: 10px;
+        border: 2px solid #f5f0dd;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.images__card {
+    width: 25%;
+    min-height: 300px;
+    padding: 10px;
+}

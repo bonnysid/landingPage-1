@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 20000;
+    height: 90px;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background: #313030;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0 25px;
+        height: 100%;
+
+        cursor: pointer;
+        transition: .3s background;
+
+        &:hover {
+            background: $btnHover;
+        }
+
+        &--active {
+            background: $btnHover;
+
+            &:hover {
+                background: #ff7070;
+            }
+        }
+    }
+
+    .container {
+        color: $headerColor;
+        height: 100%;
+    }
+}

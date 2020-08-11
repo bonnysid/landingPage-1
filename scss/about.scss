@@ -1,0 +1,26 @@
+.about {
+    .content__part {
+        padding-bottom: 70px;
+    }
+
+    .container {
+        border-bottom: 2px solid #f6f2f2;
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: $fzSubTitle;
+        font-weight: 800;
+    }
+}
+
+.container {}
