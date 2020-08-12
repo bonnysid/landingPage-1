@@ -5,16 +5,30 @@
         align-items: center;
     }
 
-    &__menu {}
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 900px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 
-    &__btn {}
+    &__btn {
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+
+        &.active {
+            color: $btnColor;
+        }
+    }
 
     &__img {
         width: 100%;
         height: 100%;
-        background: #f5f0dd;
+        background: $imgColor;
         padding: 10px;
-        border: 2px solid #f5f0dd;
+        border: 2px solid $imgColor;
 
         &:last-child {
             margin: 0;

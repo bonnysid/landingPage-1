@@ -5,12 +5,7 @@
 @import "home.scss";
 @import "about.scss";
 @import "portfolio.scss";
-
-// $fz:100px; // переменная
-
-// @mixin fontz($f) { //функция
-//     font-size: $f;
-// }
-
-// @include fontz(10px); //подключение функции
-// @extend .tplborder;
+@import "team.scss";
+@import "subscribe.scss";
+@import "contact.scss";
+@import "footer.scss";

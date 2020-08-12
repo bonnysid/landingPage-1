@@ -24,14 +24,14 @@
         transition: .3s background;
 
         &:hover {
-            background: $btnHover;
+            background: $btnColor;
         }
 
         &--active {
-            background: $btnHover;
+            background: $btnColor;
 
             &:hover {
-                background: #ff7070;
+                background: $btnHover;
             }
         }
     }
