@@ -69,3 +69,34 @@
 
     &__text {}
 }
+
+@media screen and (max-width: 1050px) {
+    .contact {
+        &__info {
+            padding: 70px 20px 0 20px;
+        }
+
+        .content__text {
+            &.red-line-l {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    bottom: 30px;
+                    width: 130px;
+                    height: 2px;
+                    background: $btnColor;
+                }
+            }
+        }
+
+        .content__part {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+
+}

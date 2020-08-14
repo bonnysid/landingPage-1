@@ -20,7 +20,6 @@
         &.images {
             flex-wrap: wrap;
             width: 100%;
-            justify-content: space-between;
         }
     }
 
@@ -72,10 +71,12 @@
         }
     }
 
-    &__column {
+    &__row {
         display: flex;
-        flex-direction: column;
-        margin: 0 40px;
+
+        .content__block {
+            margin: 20px
+        }
     }
 }
 
@@ -93,6 +94,10 @@
 
 .mtb-10 {
     margin: 10px 0;
+}
+
+.mt-50 {
+    margin-top: 50px;
 }
 
 .center {
@@ -138,5 +143,13 @@
             background: $btnColor;
         }
 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        &__title {
+            font-size: 32px;
+        }
     }
 }

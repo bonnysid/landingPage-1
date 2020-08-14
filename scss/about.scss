@@ -23,4 +23,16 @@
     }
 }
 
-.container {}
+@media screen and (max-width: 1160px) {
+    .about {
+        .content__part {
+            flex-direction: column;
+        }
+
+        .content__block {
+            &.row {
+                margin-top: 50px;
+            }
+        }
+    }
+}

@@ -28,3 +28,17 @@
         }
     }
 }
+
+@media screen and (max-width: 818px) {
+    .subscride {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__btn {
+            margin-top: 40px;
+        }
+    }
+}

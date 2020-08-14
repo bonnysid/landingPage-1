@@ -1,0 +1,26 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000l\u0000a\u0000n\u0000d\u0000i\u0000n\u0000g\u0000P\u0000a\u0000g\u0000e\u0000-\u00001\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonnysid/landingPage-1.git"
+  },
+  "author": "Nikita Bortsov \"bonnysid\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonnysid/landingPage-1/issues"
+  },
+  "homepage": "https://github.com/bonnysid/landingPage-1#readme"
+}
