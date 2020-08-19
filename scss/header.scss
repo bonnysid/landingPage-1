@@ -9,7 +9,6 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        background: #313030;
     }
 
     &__btn {
@@ -37,7 +36,90 @@
     }
 
     .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #313030;
         color: $headerColor;
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .shadow {
+        transition: .3s;
+
+        &.active {
+            top: 0;
+        }
+    }
+
+
+    .header {
+        .container {
+            justify-content: flex-end;
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            color: $headerColor;
+        }
+
+        &__burger {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 35px;
+            height: 25px;
+            margin-right: 20px;
+
+            span {
+                background: $headerColor;
+                height: 2px;
+                width: 35px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: $headerColor;
+                height: 2px;
+                width: 35px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: $headerColor;
+                height: 2px;
+                width: 35px;
+            }
+        }
+
+        &__nav {
+            flex-direction: column;
+            justify-content: flex-start;
+            position: fixed;
+            top: -100%;
+            left: 0;
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            z-index: 19000;
+            transition: .3s;
+
+            background: $mainColor;
+
+            &.active {
+                top: 90px;
+            }
+        }
     }
 }

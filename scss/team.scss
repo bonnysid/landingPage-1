@@ -52,3 +52,23 @@
         }
     }
 }
+
+@media screen and (max-width: 920px) {
+    .slider {
+        flex-direction: column;
+
+        &__big {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__row {
+            display: none;
+        }
+
+        &__small {
+            padding-left: 20px;
+        }
+    }
+}
