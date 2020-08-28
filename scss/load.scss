@@ -39,11 +39,16 @@ body {
 .shadow {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: -100%;
     right: 0;
     z-index: 18000;
-    background: rgba($color: #000000, $alpha: 0.5)
+    background: rgba($color: #000000, $alpha: 0.5);
+    transition: .3s;
+
+    &.active {
+        top: 0;
+    }
 }
 
 @media screen and (max-width: 1250px) {

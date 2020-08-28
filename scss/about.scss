@@ -36,3 +36,11 @@
         }
     }
 }
+
+@media screen and (max-width: 690px) {
+    .about {
+        .content__row {
+            flex-direction: column;
+        }
+    }
+}
